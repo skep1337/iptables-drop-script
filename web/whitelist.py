@@ -4,7 +4,6 @@ import sys
 
 def block_ip_subnet(ip_subnet):
     if ip_subnet.version == 4:
-       
         command = f"iptables -A INPUT -p tcp -s {ip_subnet} -m multiport --dports 80,443 -j ACCEPT"
     elif ip_subnet.version == 6:
         command = f"ip6tables -A INPUT -p tcp -s {ip_subnet} -m multiport --dports 80,443 -j ACCEPT"
