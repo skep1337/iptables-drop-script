@@ -1,4 +1,6 @@
-## Usage
+#### All scripts here work with both IPv4 and IPv6 addresses in lists.
+
+### Usage
 ```bash
-python block_subnets.py list.txt
+python <script>.py <list>.txt
 ```
